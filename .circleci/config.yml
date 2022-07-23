@@ -12,9 +12,7 @@ jobs:
       - run:
           name: Create Cloudformation Stack
           command: |
-            aws cloudformation deploy \
-              --template-file template.yml \
-              --stack-name my-Stack3
+            aws cloudformation deploy --template-file template.yml --stack-name my-Stack3
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
